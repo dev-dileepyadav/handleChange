@@ -1,0 +1,11 @@
+handleChange = (event) => {
+    const name = event.target.name;
+    const value = event.target.value;
+    const detail = event.detail;
+    this.data = {
+      ...this.data,
+      [name]: value
+    };
+    this.accountAddress = detail;
+    console.log(this.accountAddress);
+  }
